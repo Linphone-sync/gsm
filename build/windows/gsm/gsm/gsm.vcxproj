@@ -83,6 +83,9 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(ProjectDir)gsm.def</ModuleDefinitionFile>
     </Link>
+    <PostBuildEvent>
+      <Command>Xcopy /I /Y $(ProjectDir)..\..\..\..\inc\*.h $(ProjectDir)$(Platform)\$(Configuration)\gsm\</Command>
+    </PostBuildEvent>
     <CustomBuildStep>
       <Outputs>$(TargetDir)$(TargetName)_dll.lib;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -109,6 +112,9 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(ProjectDir)gsm.def</ModuleDefinitionFile>
     </Link>
+    <PostBuildEvent>
+      <Command>Xcopy /I /Y $(ProjectDir)..\..\..\..\inc\*.h $(ProjectDir)$(Platform)\$(Configuration)\gsm\</Command>
+    </PostBuildEvent>
     <CustomBuildStep>
       <Outputs>$(TargetDir)$(TargetName)_dll.lib;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -133,6 +139,9 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(ProjectDir)gsm.def</ModuleDefinitionFile>
     </Link>
+    <PostBuildEvent>
+      <Command>Xcopy /I /Y $(ProjectDir)..\..\..\..\inc\*.h $(ProjectDir)$(Platform)\$(Configuration)\gsm\</Command>
+    </PostBuildEvent>
     <CustomBuildStep>
       <Outputs>$(TargetDir)$(TargetName)_dll.lib;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -159,6 +168,9 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(ProjectDir)gsm.def</ModuleDefinitionFile>
     </Link>
+    <PostBuildEvent>
+      <Command>Xcopy /I /Y $(ProjectDir)..\..\..\..\inc\*.h $(ProjectDir)$(Platform)\$(Configuration)\gsm\</Command>
+    </PostBuildEvent>
     <CustomBuildStep>
       <Outputs>$(TargetDir)$(TargetName)_dll.lib;%(Outputs)</Outputs>
     </CustomBuildStep>
