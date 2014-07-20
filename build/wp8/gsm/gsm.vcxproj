@@ -66,7 +66,7 @@
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(ProjectDir)gsm.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ProjectDir)..\..\..\gsm.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>Xcopy /I /Y $(ProjectDir)..\..\..\inc\*.h $(ProjectDir)$(Platform)\$(Configuration)\gsm\</Command>
@@ -128,7 +128,7 @@
     <ClInclude Include="..\..\..\inc\unproto.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="gsm.def" />
+    <None Include="..\..\..\gsm.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
